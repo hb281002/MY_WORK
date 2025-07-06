@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Reference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>HTML Tags Reference</h1>
+        <p>A complete list of important HTML tags with examples.</p>
+    </header>
+
+    <section>
+        <h2>1. Text Formatting</h2>
+        <p>This is a <strong>bold</strong>, <em>italic</em>, and <u>underlined</u> text.</p>
+        <p><mark>Highlighted text</mark></p>
+        <p><small>Small text</small></p>
+        <p>H<sub>2</sub>O (Subscript) and x<sup>2</sup> (Superscript)</p>
+        <p><del>Deleted text</del> and <ins>Inserted text</ins></p>
+        <blockquote>This is a blockquote.</blockquote>
+        <code>console.log("Hello World");</code>
+        <pre>
+            This is preformatted text.
+            It maintains spacing.
+        </pre>
+    </section>
+
+    <section>
+        <h2>2. Links & Navigation</h2>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </section>
+
+    <section>
+        <h2>3. Lists</h2>
+        <h3>Ordered List:</h3>
+        <ol>
+            <li>Item One</li>
+            <li>Item Two</li>
+        </ol>
+
+        <h3>Unordered List:</h3>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Tables</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>5. Forms</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <p>Choose your gender:</p>
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            
+            <p>Hobbies:</p>
+            <label>
+                <input type="checkbox" name="hobby" value="Reading"> Reading
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="Sports"> Sports
+            </label>
+            
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>6. Multimedia</h2>
+        <h3>Image</h3>
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+        <h3>Video</h3>
+        <video controls width="300">
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <section>
+        <h2>7. Semantic Elements</h2>
+        <article>
+            <h3>Article Title</h3>
+            <p>This is an example of an article tag.</p>
+        </article>
+        
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is an aside section.</p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HTML Reference</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+<style>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Navigation */
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 0 10px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Forms */
+input, button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Adjust Checkbox & Radio Button Alignment */
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Adds space between checkbox/radio and label */
+    cursor: pointer;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+</style>

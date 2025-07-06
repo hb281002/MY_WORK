@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 20px;
+            margin-left: 25px;
+        }
+        table{
+            width: 150px;
+            height: 100px;
+        }
+        h1{
+            text-align: center;
+        }
+        .c1{
+            background-color: lightblue;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    td#pass:hover {
+        box-shadow: 0 0 15px 5px limegreen;
+        transition: 0.5s ease;
+    }
+
+    /* Glowing effect on FAIL (red) */
+    td#fail:hover {
+        box-shadow: 0 0 15px 5px red;
+        transition: 0.5s ease;
+    }
+    </style>
+</head>
+<body>
+    <div class="c1">
+    <h1>STUDENT MARK LIST</h1>
+    <table>
+        <tr><th>ID</th><th>NAME</th><th>MARK</th><th colspan="2">PASS / FAIL</th></tr>
+        <tr><td>1.</td><td>Hari</td><td>92</td><td style="color: white;background-color: green;" id="pass">PASS</td><td>FAIL</td></tr>
+        <tr><td>2.</td><td>MATHU</td><td>99</td><td style="color: white;background-color: green;"id="pass">PASS</td><td>FAIL</td></tr>
+        <tr><td>3.</td><td>PRIYA</td><td>32</td><td >PASS</td><td style="color: white;background-color: red;" id="fail">FAIL</td></tr>
+        <tr><td>4.</td><td>BHUVANESH</td><td>76</td><td style="color: white;background-color: green;" id="pass">PASS</td><td>FAIL</td></tr>
+        <tr><td>5.</td><td>AJITH</td><td>24</td><td >PASS</td><td style="color: white;background-color: red;" id="fail">FAIL</td></tr>
+    </table>
+    </div>
+</body>
+</html>
