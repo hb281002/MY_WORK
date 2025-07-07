@@ -12,7 +12,7 @@
 def Localvariable():
     a1 = "Local variable"
     print(a1)
-#print(message)
+#print(a1)
 Localvariable()
 print()
 #2.Global variable
